@@ -6,6 +6,25 @@ This package is intentionally separate from `muscles-data`: the core package
 owns typed ports and runtime, while this package owns the PyMongo-backed
 `DocumentStorePort` adapter.
 
+## Related packages
+
+- Core runtime and port contracts:
+  [`muscles-data`](https://github.com/butkoden/muscles-data)
+- Elasticsearch search adapter:
+  [`muscles-data-elasticsearch`](https://github.com/butkoden/muscles-data-elasticsearch)
+- OpenSearch search adapter:
+  [`muscles-data-opensearch`](https://github.com/butkoden/muscles-data-opensearch)
+- Redis key-value/lock/stream adapter:
+  [`muscles-data-redis`](https://github.com/butkoden/muscles-data-redis)
+- Qdrant vector adapter:
+  [`muscles-data-qdrant`](https://github.com/butkoden/muscles-data-qdrant)
+- S3 object-store adapter:
+  [`muscles-data-s3`](https://github.com/butkoden/muscles-data-s3)
+- SQLAlchemy direct SQL resource adapter:
+  [`muscles-data-sqlalchemy`](https://github.com/butkoden/muscles-data-sqlalchemy)
+- Executable example:
+  [`example_data_mongodb_1`](https://github.com/butkoden/muscular-example/tree/master/example_data_mongodb_1)
+
 ## Install
 
 ```bash
