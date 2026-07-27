@@ -15,6 +15,7 @@ from muscles_data.models import DataCapability, HealthResult, InspectResult, Wri
 _CLIENT_UNSET = object()
 _ALLOWED_OPTIONS = {
     "url",
+    "url_env",
     "database",
     "username",
     "password",
@@ -183,20 +184,24 @@ class MongoDocumentStoreAdapter:
         if unknown:
             names = ", ".join(unknown)
             raise MongoDBConfigError(f"Unsupported MongoDB resource options: {names}")
-        if not self.config.options.get("url"):
-            raise MongoDBConfigError("MongoDB resource requires url")
+        if not self.config.options.get("url") and not self.config.options.get("url_env"):
+            raise MongoDBConfigError("MongoDB resource requires url or url_env")
         self.database_name()
         self.max_limit()
 
     def _safe_error(self, exc: Exception) -> str:
         message = str(exc)
+        try:
+            options = self.config.resolved_options()
+        except Exception:
+            options = self.config.options
         sensitive_values = {
-            str(self.config.options.get("url", "")),
-            str(self.config.options.get("username", "")),
-            str(self.config.options.get("password", "")),
+            str(options.get("url", "")),
+            str(options.get("username", "")),
+            str(options.get("password", "")),
         }
         try:
-            parsed = urlsplit(str(self.config.options.get("url", "")))
+            parsed = urlsplit(str(options.get("url", "")))
             if parsed.username:
                 sensitive_values.add(parsed.username)
             if parsed.password:
@@ -231,24 +236,29 @@ def _default_mongo_client(config: DataResourceConfig):
     if client_cls is None:
         raise MongoDBClientMissingError("pymongo does not expose MongoClient")
 
+    try:
+        options = config.resolved_options()
+    except Exception as exc:
+        raise MongoDBConfigError(str(exc)) from exc
+
     kwargs: dict[str, Any] = {}
-    if "timeout" in config.options:
-        timeout_ms = int(float(config.options["timeout"]) * 1000)
+    if "timeout" in options:
+        timeout_ms = int(float(options["timeout"]) * 1000)
         kwargs["timeoutMS"] = timeout_ms
         kwargs["serverSelectionTimeoutMS"] = timeout_ms
-    if "timeout_ms" in config.options:
-        kwargs["timeoutMS"] = int(config.options["timeout_ms"])
-    if "server_selection_timeout_ms" in config.options:
-        kwargs["serverSelectionTimeoutMS"] = int(config.options["server_selection_timeout_ms"])
-    if "username" in config.options:
-        kwargs["username"] = config.options["username"]
-    if "password" in config.options:
-        kwargs["password"] = config.options["password"]
-    if "auth_source" in config.options:
-        kwargs["authSource"] = config.options["auth_source"]
-    if "tls" in config.options:
-        kwargs["tls"] = bool(config.options["tls"])
-    return client_cls(str(config.options["url"]), **kwargs)
+    if "timeout_ms" in options:
+        kwargs["timeoutMS"] = int(options["timeout_ms"])
+    if "server_selection_timeout_ms" in options:
+        kwargs["serverSelectionTimeoutMS"] = int(options["server_selection_timeout_ms"])
+    if "username" in options:
+        kwargs["username"] = options["username"]
+    if "password" in options:
+        kwargs["password"] = options["password"]
+    if "auth_source" in options:
+        kwargs["authSource"] = options["auth_source"]
+    if "tls" in options:
+        kwargs["tls"] = bool(options["tls"])
+    return client_cls(str(options["url"]), **kwargs)
 
 
 def _collection_name(value: str) -> str:
