@@ -8,6 +8,7 @@ from .adapter import (
     MongoDocumentStoreAdapter,
     MongoDocumentStoreFactory,
 )
+from .policy_store import MongoPolicyDocumentStore
 
 
 __all__ = [
@@ -17,4 +18,5 @@ __all__ = [
     "MongoDBConnectionError",
     "MongoDocumentStoreAdapter",
     "MongoDocumentStoreFactory",
+    "MongoPolicyDocumentStore",
 ]

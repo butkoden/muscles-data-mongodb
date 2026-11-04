@@ -1,0 +1,941 @@
+{
+  "version": "1.0.0",
+  "schema_version": 1,
+  "project": {
+    "name": "muscles-data-mongodb",
+    "is_monorepo": false,
+    "total_files": 12,
+    "entry_points": [],
+    "tech_stack": [
+      {
+        "name": "SQLAlchemy",
+        "version": null,
+        "category": "database"
+      },
+      {
+        "name": "Python",
+        "version": null,
+        "category": "language"
+      }
+    ],
+    "entry_candidates": [],
+    "graph_mode": "flow"
+  },
+  "nodes": [
+    {
+      "id": "class:src/muscles_data_mongodb/adapter.py:MongoDBAdapterError",
+      "type": "class",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "MongoDBAdapterError",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "class:src/muscles_data_mongodb/adapter.py:MongoDBClientMissingError",
+      "type": "class",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "MongoDBClientMissingError",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "class:src/muscles_data_mongodb/adapter.py:MongoDBConfigError",
+      "type": "class",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "MongoDBConfigError",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "class:src/muscles_data_mongodb/adapter.py:MongoDBConnectionError",
+      "type": "class",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "MongoDBConnectionError",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "class:src/muscles_data_mongodb/adapter.py:MongoDocumentStoreAdapter",
+      "type": "class",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "MongoDocumentStoreAdapter",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "class:src/muscles_data_mongodb/adapter.py:MongoDocumentStoreFactory",
+      "type": "class",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "MongoDocumentStoreFactory",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "file:.github/workflows/ci.yml",
+      "type": "pipeline",
+      "filePath": ".github/workflows/ci.yml",
+      "language": "yaml",
+      "symbolCount": 0,
+      "lineCount": 38,
+      "complexity": "simple",
+      "pagerank": 0.052247,
+      "communityId": 1,
+      "tags": [
+        "config",
+        "ci"
+      ],
+      "summary": "GitHub Actions CI/CD workflow definition."
+    },
+    {
+      "id": "file:.github/workflows/release.yml",
+      "type": "pipeline",
+      "filePath": ".github/workflows/release.yml",
+      "language": "yaml",
+      "symbolCount": 0,
+      "lineCount": 28,
+      "complexity": "simple",
+      "pagerank": 0.052247,
+      "communityId": 2,
+      "tags": [
+        "config",
+        "ci"
+      ],
+      "summary": "GitHub Actions CI/CD workflow definition."
+    },
+    {
+      "id": "file:CHANGELOG.md",
+      "type": "document",
+      "filePath": "CHANGELOG.md",
+      "language": "markdown",
+      "symbolCount": 0,
+      "lineCount": 6,
+      "complexity": "simple",
+      "pagerank": 0.052247,
+      "communityId": 3,
+      "tags": [],
+      "summary": "Release history and notable changes."
+    },
+    {
+      "id": "file:README.md",
+      "type": "document",
+      "filePath": "README.md",
+      "language": "markdown",
+      "symbolCount": 0,
+      "lineCount": 86,
+      "complexity": "simple",
+      "pagerank": 0.052247,
+      "communityId": 4,
+      "tags": [],
+      "summary": "Project overview and entry point for new readers."
+    },
+    {
+      "id": "file:docs/release-candidate.md",
+      "type": "document",
+      "filePath": "docs/release-candidate.md",
+      "language": "markdown",
+      "symbolCount": 0,
+      "lineCount": 18,
+      "complexity": "simple",
+      "pagerank": 0.052247,
+      "communityId": 5,
+      "tags": [],
+      "summary": "Documentation: release-candidate.md."
+    },
+    {
+      "id": "file:examples/run_mongodb_document_store.py",
+      "type": "file",
+      "filePath": "examples/run_mongodb_document_store.py",
+      "language": "python",
+      "symbolCount": 20,
+      "lineCount": 92,
+      "complexity": "complex",
+      "pagerank": 0.052247,
+      "communityId": 0,
+      "tags": [],
+      "summary": "Docs & Tooling module run_mongodb_document_store defining FakeMongoAdmin, command, FakeMongoCursor.",
+      "primaryOwner": "Denis Butko"
+    },
+    {
+      "id": "file:pyproject.toml",
+      "type": "config",
+      "filePath": "pyproject.toml",
+      "language": "toml",
+      "symbolCount": 0,
+      "lineCount": 38,
+      "complexity": "simple",
+      "pagerank": 0.052247,
+      "communityId": 6,
+      "tags": [
+        "config"
+      ],
+      "summary": "Python project metadata, dependencies, and build configuration."
+    },
+    {
+      "id": "file:src/muscles_data_mongodb/__init__.py",
+      "type": "file",
+      "filePath": "src/muscles_data_mongodb/__init__.py",
+      "language": "python",
+      "symbolCount": 1,
+      "lineCount": 10,
+      "complexity": "simple",
+      "pagerank": 0.229886,
+      "communityId": 0,
+      "tags": [],
+      "summary": "Application module __init__ (1 symbols).",
+      "primaryOwner": "Denis Butko"
+    },
+    {
+      "id": "file:src/muscles_data_mongodb/adapter.py",
+      "type": "file",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "language": "python",
+      "symbolCount": 31,
+      "lineCount": 269,
+      "complexity": "complex",
+      "pagerank": 0.247647,
+      "communityId": 0,
+      "tags": [],
+      "summary": "Application module adapter defining MongoDBAdapterError, MongoDBConfigError, MongoDBClientMissingError.",
+      "primaryOwner": "Denis Butko"
+    },
+    {
+      "id": "file:tests/test_integration 2.py",
+      "type": "file",
+      "filePath": "tests/test_integration 2.py",
+      "language": "python",
+      "symbolCount": 2,
+      "lineCount": 47,
+      "complexity": "simple",
+      "pagerank": 0.052247,
+      "communityId": 0,
+      "tags": [
+        "test"
+      ],
+      "summary": "Tests for integration 2."
+    },
+    {
+      "id": "file:tests/test_integration.py",
+      "type": "file",
+      "filePath": "tests/test_integration.py",
+      "language": "python",
+      "symbolCount": 2,
+      "lineCount": 49,
+      "complexity": "simple",
+      "pagerank": 0.052247,
+      "communityId": 0,
+      "tags": [
+        "test"
+      ],
+      "summary": "Tests for integration.",
+      "primaryOwner": "Denis Butko"
+    },
+    {
+      "id": "file:tests/test_mongodb_adapter.py",
+      "type": "file",
+      "filePath": "tests/test_mongodb_adapter.py",
+      "language": "python",
+      "symbolCount": 26,
+      "lineCount": 244,
+      "complexity": "complex",
+      "pagerank": 0.052247,
+      "communityId": 0,
+      "tags": [
+        "test"
+      ],
+      "summary": "Tests for mongodb_adapter.",
+      "primaryOwner": "Denis Butko"
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:__init__",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "__init__",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:_bounded_limit",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "_bounded_limit",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:_client_instance",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "_client_instance",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:_collection",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "_collection",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:_collection_name",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "_collection_name",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:_default_mongo_client",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "_default_mongo_client",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:_public_document",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "_public_document",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:_safe_error",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "_safe_error",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:_storage_document",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "_storage_document",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:_validate_options",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "_validate_options",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:capabilities",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "capabilities",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:close",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "close",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:create",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "create",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:database_name",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "database_name",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:delete_document",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "delete_document",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:find_documents",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "find_documents",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:get_document",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "get_document",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:health",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "health",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:inspect",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "inspect",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:max_limit",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "max_limit",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:native_client",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "native_client",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    },
+    {
+      "id": "function:src/muscles_data_mongodb/adapter.py:upsert_document",
+      "type": "function",
+      "filePath": "src/muscles_data_mongodb/adapter.py",
+      "name": "upsert_document",
+      "language": "python",
+      "tags": [],
+      "summary": ""
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:examples/run_mongodb_document_store.py",
+      "target": "file:src/muscles_data_mongodb/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/__init__.py",
+      "target": "file:src/muscles_data_mongodb/adapter.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "class:src/muscles_data_mongodb/adapter.py:MongoDBAdapterError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "class:src/muscles_data_mongodb/adapter.py:MongoDBClientMissingError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "class:src/muscles_data_mongodb/adapter.py:MongoDBConfigError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "class:src/muscles_data_mongodb/adapter.py:MongoDBConnectionError",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "class:src/muscles_data_mongodb/adapter.py:MongoDocumentStoreAdapter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "class:src/muscles_data_mongodb/adapter.py:MongoDocumentStoreFactory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:__init__",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:_bounded_limit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:_client_instance",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:_collection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:_collection_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:_default_mongo_client",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:_public_document",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:_safe_error",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:_storage_document",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:_validate_options",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:capabilities",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:close",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:create",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:database_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:delete_document",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:find_documents",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:get_document",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:health",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:inspect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:max_limit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:native_client",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py",
+      "target": "function:src/muscles_data_mongodb/adapter.py:upsert_document",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreAdapter",
+      "target": "function:src/muscles_data_mongodb/adapter.py:__init__",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreAdapter",
+      "target": "function:src/muscles_data_mongodb/adapter.py:_bounded_limit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreAdapter",
+      "target": "function:src/muscles_data_mongodb/adapter.py:_client_instance",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreAdapter",
+      "target": "function:src/muscles_data_mongodb/adapter.py:_collection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreAdapter",
+      "target": "function:src/muscles_data_mongodb/adapter.py:_safe_error",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreAdapter",
+      "target": "function:src/muscles_data_mongodb/adapter.py:_validate_options",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreAdapter",
+      "target": "function:src/muscles_data_mongodb/adapter.py:close",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreAdapter",
+      "target": "function:src/muscles_data_mongodb/adapter.py:database_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreAdapter",
+      "target": "function:src/muscles_data_mongodb/adapter.py:delete_document",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreAdapter",
+      "target": "function:src/muscles_data_mongodb/adapter.py:find_documents",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreAdapter",
+      "target": "function:src/muscles_data_mongodb/adapter.py:get_document",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreAdapter",
+      "target": "function:src/muscles_data_mongodb/adapter.py:health",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreAdapter",
+      "target": "function:src/muscles_data_mongodb/adapter.py:inspect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreAdapter",
+      "target": "function:src/muscles_data_mongodb/adapter.py:max_limit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreAdapter",
+      "target": "function:src/muscles_data_mongodb/adapter.py:native_client",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreAdapter",
+      "target": "function:src/muscles_data_mongodb/adapter.py:upsert_document",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreFactory",
+      "target": "function:src/muscles_data_mongodb/adapter.py:__init__",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreFactory",
+      "target": "function:src/muscles_data_mongodb/adapter.py:capabilities",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:src/muscles_data_mongodb/adapter.py::MongoDocumentStoreFactory",
+      "target": "function:src/muscles_data_mongodb/adapter.py:create",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:tests/test_integration 2.py",
+      "target": "file:src/muscles_data_mongodb/__init__.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:tests/test_integration.py",
+      "target": "file:src/muscles_data_mongodb/__init__.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:tests/test_mongodb_adapter.py",
+      "target": "file:src/muscles_data_mongodb/__init__.py",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 1.0
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:application",
+      "name": "Application",
+      "description": "",
+      "nodeIds": [
+        "file:CHANGELOG.md",
+        "file:README.md",
+        "file:pyproject.toml",
+        "file:src/muscles_data_mongodb/__init__.py",
+        "file:src/muscles_data_mongodb/adapter.py"
+      ],
+      "display_order": 0,
+      "order_basis": "canonical"
+    },
+    {
+      "id": "layer:config",
+      "name": "Config",
+      "description": "",
+      "nodeIds": [
+        "file:.github/workflows/ci.yml",
+        "file:.github/workflows/release.yml"
+      ],
+      "display_order": 1,
+      "order_basis": "canonical"
+    },
+    {
+      "id": "layer:docs-tooling",
+      "name": "Docs & Tooling",
+      "description": "",
+      "nodeIds": [
+        "file:docs/release-candidate.md",
+        "file:examples/run_mongodb_document_store.py"
+      ],
+      "display_order": 2,
+      "order_basis": "canonical"
+    },
+    {
+      "id": "layer:test",
+      "name": "Test",
+      "description": "",
+      "nodeIds": [
+        "file:tests/test_integration 2.py",
+        "file:tests/test_integration.py",
+        "file:tests/test_mongodb_adapter.py"
+      ],
+      "display_order": 3,
+      "order_basis": "canonical"
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "target_path": "README.md",
+      "page_type": "repo_overview",
+      "title": "README.md",
+      "depth": 0,
+      "kind": "overview",
+      "reason": "Start here for the end-to-end picture before diving into the code.",
+      "layer_id": "layer:application"
+    },
+    {
+      "order": 2,
+      "target_path": "src/muscles_data_mongodb/__init__.py",
+      "page_type": "file_page",
+      "title": "__init__.py",
+      "depth": 0,
+      "kind": "code",
+      "reason": "The walk's anchor \u2014 its imports fan out the widest in a repo with no single entry point.",
+      "layer_id": "layer:application"
+    },
+    {
+      "order": 3,
+      "target_path": "src/muscles_data_mongodb/adapter.py",
+      "page_type": "file_page",
+      "title": "adapter.py",
+      "depth": 1,
+      "kind": "code",
+      "reason": "Directly imported by the anchor above; a core collaborator.",
+      "layer_id": "layer:application"
+    },
+    {
+      "order": 4,
+      "target_path": "tests/test_integration 2.py",
+      "page_type": "file_page",
+      "title": "test_integration 2.py",
+      "depth": 2,
+      "kind": "code",
+      "reason": "The test suite \u2014 how the system's behavior is verified.",
+      "layer_id": "layer:test"
+    }
+  ],
+  "modules": [
+    {
+      "id": "module:application",
+      "name": "Application",
+      "path": "",
+      "layerId": "layer:application",
+      "nodeIds": [
+        "file:CHANGELOG.md",
+        "file:README.md",
+        "file:pyproject.toml",
+        "file:src/muscles_data_mongodb/__init__.py",
+        "file:src/muscles_data_mongodb/adapter.py"
+      ],
+      "wholeLayer": true,
+      "language": "markdown"
+    },
+    {
+      "id": "module:tests",
+      "name": "Test",
+      "path": "tests",
+      "layerId": "layer:test",
+      "nodeIds": [
+        "file:tests/test_integration 2.py",
+        "file:tests/test_integration.py",
+        "file:tests/test_mongodb_adapter.py"
+      ],
+      "wholeLayer": true,
+      "language": "python"
+    }
+  ]
+}
